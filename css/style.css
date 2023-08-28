@@ -870,25 +870,64 @@ section {
           user-select: none;
 }
 
-.footer {
-  text-align: center;
-}
+/*** Footer ***/
 
-.footer .links .btn {
-  margin: .5rem;
-}
-
-.footer .credit {
-  font-size: 2rem;
-  color: var(--black);
+.footer .btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: rgba(255,255,255,0.5);
+  font-weight: normal;
   text-transform: capitalize;
-  margin-top: 2rem;
-  padding-top: 1rem;
+  transition: .3s;
 }
 
-.footer .credit span {
-  color: var(--yellow);
+.footer p {
+  font-size: 16px;
+  font-weight: 500;
 }
+
+.footer .btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: rgba(255,255,255,0.5);
+  margin-right: 10px;
+}
+
+.footer .btn-link:hover {
+  color: var(--light);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .btn-square {
+  color: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.footer .btn-square:hover {
+  color: var(--secondary);
+  border-color: var(--light);
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--secondary);
+}
+
+.footer .copyright a:hover {
+  color: var(--primary);
+}
+
+
 
 @media (max-width: 1200px) {
   .header {
